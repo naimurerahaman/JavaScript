@@ -1,1 +1,1 @@
-console.log("ki sajal vaya ekara ekara coding korco?")
+console.log("Hello World!")
