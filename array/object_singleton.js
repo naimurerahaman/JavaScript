@@ -48,5 +48,20 @@ const merged_obj2 = {...obj1, ...obj2} //merging objects using spread operator
 // console.log(Object.entries(merged_obj2)[0][0]) //a
 // console.log(Object.entries(merged_obj2)[0][1]) //1   
 
-console.log(merged_obj2.hasOwnProperty('a')) //true
-console.log(merged_obj2.hasOwnProperty('z')) //false
+// console.log(merged_obj2.hasOwnProperty('a')) //true
+// console.log(merged_obj2.hasOwnProperty('z')) //false
+
+//destructuring of objects
+const course = {
+    coursename : "JavaScript",
+    price : "free",
+    courseInstructor : "Emon"
+}
+// console.log(course.coursename) //JavaScript //you have to write course everytime
+
+// const {coursename : cNames} = course //destructuring
+// console.log(cNames) //JavaScript
+
+const {coursename : cNames, price, courseInstructor} = course //destructuring
+console.log(cNames, price, courseInstructor) //JavaScript free Emon
+console.log(course) //{ coursename: 'JavaScript', price: 'free', courseInstructor: 'Emon' }
